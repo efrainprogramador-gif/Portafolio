@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Efrain_Programador">
+  <meta name="description" content="Portafolio en Bootstrap">
+  <meta name="keywords" content="Desarrollo web">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <title>Portafolio Web | Efrain Programador</title>
+
+  <link rel="icon" href="./assets/images/icono_programdor.jpg">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <nav id="inicio" class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler mi-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/icono_programdor.jpg" alt="Logo de la pagina web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos-recientes">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mis-certificados">Certificados</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competencias">Competencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="./assets/images/fotoPorta2026.png" alt="foto de Efraín">
+      <h1>Hola, soy Efraín</h1>
+      <h2>Desarrollo Web</h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="./assets/images/hero-inferior.svg" alt="Logos de html, css, js y react">
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="sobre-mi seccion-oscura linea-separadora">
+    <div class="contenedor">
+      <h2 class="seccion-titulo texto-blanco">Conoce a Efraín - Trainee en Desarrollo Web Full Stack</h2>
+      <p class="seccion-texto">
+        Soy Técnico Universitario Graduado en Minería y Técnico en Mecanografía en mi país de origen: Venezuela.      
+        Desde que llegué a Argentina descubrí que mi verdadera pasión es el Desarrollo Web y me he formado de manera constante en el sector tecnológico a través de academias especializadas y estudio autodidacta complementario.
+        Hoy, como Trainee Frontend, estoy listo para seguir creciendo como desarrollador dentro de un equipo.
+      </p>
+    </div>
+  </section>
+
+  <section id="formacion" class="formacion seccion-clara separador-inferior">
+    <div class="container text-center">
+      <h2 class="seccion-titulo texto-negro">Formación</h2>
+      <h3 class="seccion-descripcion">Mi Trayectoria Académica y Técnica</h3>
+      <div class="row justify-content-center">
+        <div class="columna tarjeta-formacion-ancho col-12 col-md-8">
+          <i class="bi bi-laptop"></i>
+          <p class="formacion-titulo">Desarrollo Web</p>
+          <p>Certificado en Desarrollo Web Frontend por Coderhouse, donde consolidé bases sólidas en HTML5 y CSS3. 
+          Completé parte del camino del Frontend en JavaScript y React, enfocándome en la creación de aplicaciones web dinámicas, 
+          gestión de estados complejos y consumo de APIs. Siempre buscando aplicar las mejores prácticas para escribir código limpio y eficiente.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">React</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos-recientes" class="proyectos-recientes seccion-clara d-flex flex-column separador-inferior">
+    <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
+    <h3 class="seccion-descripcion">Estos son mis proyectos concluidos</h3>
+    <div class="container text-center proyectos-contenedor">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./assets/images/htmlcss3.webp" alt="primer proyecto">
+            <div class="overlay">
+              <h4>Viajes El Caribe</h4>
+              <p>Html5 - Css3 - Bootstrap/SASS</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/efrainprogramador-gif/Viajes-El-Caribe-" target="_blank" rel="noopener noreferrer" aria-label="Ver el código fuente de Viajes El Caribe en GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://viajes-el-caribe.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./assets/images/js_icono.avif" alt="segundo proyecto">
+            <div class="overlay">
+              <h4>Balanza Ganadera "El Gaucho"</h4>
+              <p>JavaScript</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/efrainprogramador-gif/Balanza_Ganadera_El_Gaucho.git" target="_blank" rel="noopener noreferrer" aria-label="Ver el código fuente de Balanza Ganadera El Gaucho en GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://balanza-ganadera-el-gaucho.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./assets/images/react.png" alt="tercer proyecto">
+            <div class="overlay">
+              <h4>Carpincho Sports</h4>
+              <p>React</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/efrainprogramador-gif/Carpincho_Sports.git" target="_blank" rel="noopener noreferrer" aria-label="Ver el código fuente de Carpincho Sports en GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://carpincho-sports.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mis-certificados" class="mis-certificados seccion-clara separador-inferior">
+    <div class="container text-center">
+      <h2 class="seccion-titulo texto-negro">Mis Certificados</h2>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCertificados" aria-expanded="false" aria-controls="collapseCertificados">
+        Ver mis certificados
+      </button>
+      <div class="collapse mt-4" id="collapseCertificados">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3 p-2">
+            <a href="./assets/images/HtmlCss.png" target="_blank" aria-label="Ver Certificado Html mas grande" rel="noopener noreferrer">
+              <img src="./assets/images/HtmlCss.png" alt="Certificado HtmlCss" class="img-fluid border border-dark rounded">
+            </a>
+          </div>
+          <div class="col-12 col-md-3 p-2">
+            <a href="./assets/images/JavaScript.jpg" target="_blank" aria-label="Ver Certificado Css mas grande" rel="noopener noreferrer">
+              <img src="./assets/images/JavaScript.jpg" alt="Certificado Js Vanilla" class="img-fluid border border-dark rounded">
+            </a>
+          </div>
+          <div class="col-12 col-md-3 p-2">
+            <a href="./assets/images/ReactJs.jpg" target="_blank" aria-label="Ver Certificado React mas grande" rel="noopener noreferrer">
+              <img src="./assets/images/ReactJs.jpg" alt="Certificado React" class="img-fluid border border-dark rounded">
+            </a>
+          </div>
+          <div class="col-12 col-md-3 p-2">
+            <a href="./assets/images/Mecanografia.jpg" target="_blank" aria-label="Ver Certificado Mecanografía mas grande" rel="noopener noreferrer">
+              <img src="./assets/images/Mecanografia.jpg" alt="Certificado Mecanografia" class="img-fluid border border-dark rounded">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competencias" class="seccion-clara py-3 separador-inferior">
+    <div class="container text-center">
+      <h2 class="seccion-titulo texto-negro">Competencias</h2>
+      <div class="row justify-content-center">
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="formacion-titulo">Velocidad de escritura (Typing Speed)</p>
+          <p>Mi capacidad como mecanógrafo me permite una alta fluidez al escribir <strong><em>(75 ppm)</em></strong>. Mi destreza en el teclado minimiza el tiempo de ejecución en la redacción, permitiéndome mantener un flujo de trabajo ágil mientras integro nuevas funcionalidades o estructuro mis proyectos.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Digitación Ágil (75 PPM)</span>
+            <span class="badge text-bg-primary">Transcripción Eficiente</span>
+            <span class="badge text-bg-primary">Documentación Fluida</span>
+          </div>
+        </div>
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="formacion-titulo">Formación en Progreso</p>
+          <p>Mi plan de aprendizaje es fortalecer frontend y backend para construir aplicaciones escalables: Frontend Avanzado (Tailwind CSS), TypeScript, Node.js, Express, Bases de datos (PostgreSQL, MongoDB) y Fundamentos en Testing y Ciberseguridad. También quiero incorporar nuevos lenguajes, frameworks o tecnologías, adaptándome a las necesidades y objetivos del equipo de trabajo. </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Cursando Tailwind</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto" class="mi-footer-personalizado">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/efrain-hernandez-quintero" aria-label="Visitar Linkedin de Efraín" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="mailto:efrainprogramador@gmail.com" aria-label="Enviar un correo electrónico a Efraín" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://wa.me/5493417450983" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+    <div class="footer-btn">
+      <a href="#" class="btn-subir">Volver Arriba <i class="bi bi-house"></i></a>
+    </div>
+    <div class="footer-copy">
+      Creado por Efraín Hernández (2026) &#169
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</html>

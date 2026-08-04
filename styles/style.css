@@ -1,0 +1,444 @@
+/* --- Google Fonts & Importaciones --- */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* --- Resets Globales --- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* --- Barra de Navegacion --- */
+.navbar {
+  padding: 0rem 2rem;
+  background-color: #000000;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #0dcaf0 !important;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  height: 75px;
+  width: auto;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.mi-toggler {
+  border: 2px solid white !important;
+  padding: 0.5rem 0.6rem !important;
+  border-radius: 6px;
+  float: none !important;
+
+  margin: 5px auto !important;
+}
+
+@media (max-width: 767px) {
+  .mi-toggler {
+    margin: 5px auto !important;
+    display: block !important;
+  }
+}
+
+.mi-toggler .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* --- Secciones Generales --- */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+.seccion-oscura {
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.seccion-clara {
+  background-color: white;
+  color: black;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", system-ui;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.texto-negro {
+  color: black;
+}
+.texto-blanco {
+  color: white;
+}
+
+/* --- Hero --- */
+.hero {
+  background-color: white;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding-top: 1rem;
+}
+.hero-inferior {
+  padding-bottom: 40px;
+}
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 15px 0 20px 0;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  background-color: white;
+}
+
+.hero-principal h2 {
+  font-size: 1.7rem;
+  color: #615151;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* --- Formación y Columnas --- */
+.columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.2s ease-in;
+  background-color: #f8f9fa;
+  margin: 10px;
+  max-width: 400px;
+  gap: 15px;
+}
+
+.columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.columna i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.row {
+  justify-content: center;
+}
+
+.formacion-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.formacion {
+  padding: 20px 40px 60px 40px !important;
+}
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.tarjeta-formacion-ancho {
+  max-width: 800px !important;
+}
+
+/* --- Proyectos --- */
+.proyectos-recientes {
+  padding: 20px 40px 1px 40px !important;
+}
+.proyectos-recientes img {
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  object-fit: scale-down;
+}
+
+@media (max-width: 767px) {
+  .proyectos-recientes img {
+    height: 190px;
+    object-fit: cover;
+  }
+
+  .proyectos-recientes .row {
+    row-gap: 1.5rem;
+  }
+}
+
+.proyectos-contenedor {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.proyecto {
+  position: relative;
+}
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.proyecto:hover img {
+  opacity: 0.1;
+  transition: 0.5s ease-in;
+}
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+.overlay .iconos-contenedor {
+  display: flex;
+}
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 45px;
+}
+
+.overlay .iconos-contenedor a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin: 0 15px;
+}
+
+.overlay .iconos-contenedor a:nth-child(1):hover i {
+  color: #0d6efd !important;
+  transform: scale(1.25);
+}
+
+.overlay .iconos-contenedor a:nth-child(2):hover i {
+  color: #198754 !important;
+  transform: scale(1.25);
+}
+
+@media (max-width: 767px) {
+  .proyecto .overlay {
+    opacity: 1 !important;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .proyecto .overlay h4 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+
+  .proyecto .overlay p {
+    color: #dfdfdf;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .overlay i {
+    font-size: 40px !important;
+    margin: 0px 15px !important;
+    color: white !important;
+  }
+
+  .proyecto:hover img {
+    opacity: 1;
+  }
+}
+
+/* --- Contacto --- */
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.mi-footer-personalizado {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 2rem;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.btn-subir {
+  background-color: #0dcaf0;
+  color: white;
+  padding: 3px 3px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.footer-copy {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aeaeae;
+}
+
+.competencias {
+  padding-top: 10px !important;
+  padding-bottom: 3rem;
+}
+
+.separador-inferior {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+#mis-certificados .btn-primary {
+  margin-bottom: 25px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+.footer-social a {
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.footer-social a:nth-child(1):hover {
+  color: #0a66c2 !important;
+  transform: scale(1.2);
+}
+
+.footer-social a:nth-child(2):hover {
+  color: #ea4335 !important;
+  transform: scale(1.2);
+}
+
+.footer-social a:nth-child(3):hover {
+  color: #25d366 !important;
+  transform: scale(1.2);
+}
